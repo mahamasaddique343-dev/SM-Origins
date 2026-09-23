@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SM Origins | Development Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- MOBILE OVERLAY -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+
+    <div class="brand">
+        <div class="brand-logo">
+            <span class="sm">SM</span>
+            <span class="origins">ORIGINS</span>
+        </div>
+
+        <div class="brand-line"></div>
+    </div>
+
+    <nav class="side-nav">
+
+        <button class="nav-item active" data-page="dashboard">
+            <span class="nav-icon">⌂</span>
+            <span>Dashboard</span>
+        </button>
+
+        <button class="nav-item" data-page="websites">
+            <span class="nav-icon">◎</span>
+            <span>Websites &amp; Projects</span>
+        </button>
+
+        <button class="nav-item" data-page="sales">
+            <span class="nav-icon">$</span>
+            <span>Sales &amp; Payments</span>
+        </button>
+
+        <button class="nav-item" data-page="analytics">
+            <span class="nav-icon">▥</span>
+            <span>Analytics</span>
+        </button>
+
+        <button class="nav-item" data-page="tools">
+            <span class="nav-icon">&lt;/&gt;</span>
+            <span>Development Tools</span>
+        </button>
+
+        <button class="nav-item" data-page="settings">
+            <span class="nav-icon">⚙</span>
+            <span>Settings</span>
+        </button>
+
+    </nav>
+
+    <div class="sidebar-promo">
+        <div class="promo-logo">SM</div>
+        <h3>ORIGINS</h3>
+
+        <p>
+            Innovative Ideas.<br>
+            Real Solutions.<br>
+            Global Reach.
+        </p>
+    </div>
+
+</aside>
+
+
+<!-- MAIN AREA -->
+<div class="app">
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+        <div class="mobile-menu" id="mobileMenu">
+            ☰
+        </div>
+
+        <div class="top-navigation">
+            <span>BUILD</span>
+            <i></i>
+            <span>DEVELOP</span>
+            <i></i>
+            <span>EARN</span>
+
+            <small>Digital Solutions for a Greater Tomorrow</small>
+        </div>
+
+        <div class="user-area">
+
+            <button class="notification-btn" id="notificationBtn">
+                ♧
+                <span class="notification-dot"></span>
+            </button>
+
+            <div class="user-profile">
+                <div class="profile-circle">
+                    M
+                    <span></span>
+                </div>
+
+                <div class="user-info">
+                    <strong>MAHAMA SADDIQUE</strong>
+                    <small>Developer | Creator | Investor</small>
+                </div>
+            </div>
+
+            <div class="current-time">
+                <strong id="dateDisplay">Wed, Sep 23, 2026</strong>
+                <span id="timeDisplay">12:56 (GMT)</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <!-- PAGE TITLE -->
+        <section class="welcome">
+
+            <div>
+                <h1>
+                    Welcome,
+                    <span>MAHAMA SADDIQUE</span>
+                </h1>
+
+                <p>
+                    Here's your development and sales overview.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- DASHBOARD PAGE -->
+        <section class="page active-page" id="dashboardPage">
+
+            <!-- STAT CARDS -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon blue">◎</div>
+
+                    <div>
+                        <small>Total Websites Created</small>
+                        <strong>7</strong>
+                        <span>Development Projects</span>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon green">✓</div>
+
+                    <div>
+                        <small>Successfully Sold</small>
+                        <strong>2</strong>
+                        <span>(With Pending Payments)</span>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon money">$</div>
+
+                    <div>
+                        <small>Total Payment Made</small>
+                        <strong>$75.71</strong>
+                        <span>(USD)</span>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon cyan">◷</div>
+
+                    <div>
+                        <small>Pending Payments</small>
+                        <strong>$24</strong>
+                        <span>(USD)</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- DASHBOARD GRID -->
+            <div class="dashboard-grid">
+
+                <!-- MAIN COLUMN -->
+                <div class="main-column">
+
+                    <div class="section-heading">
+                        <h2>Sold Development Websites</h2>
+                        <p>
+                            Details of your successfully sold websites and current status.
+                        </p>
+                    </div>
+
+
+                    <!-- PROJECT ONE -->
+                    <article class="project-card">
+
+                        <div class="project-status">
+                            <span class="sold-badge">✓ SOLD</span>
+                            <span class="received-badge">Payment Received</span>
+                        </div>
+
+                        <div class="project-body">
+
+                            <div class="project-image development-image">
+                                <div class="image-overlay">
+                                    <strong>DEVELOPMENT PLAN</strong>
+                                    <span>Plan • Design • Build</span>
+                                </div>
+                            </div>
+
+                            <div class="project-details">
+
+                                <h3>
+                                    Site One
+                                    <span>—</span>
+                                    Development Plan
+                                </h3>
+
+                                <p>
+                                    <span>▣</span>
+                                    Floor Plan
+                                    <b>•</b>
+                                    Architectural Design
+                                    <b>•</b>
+                                    Exclusive Site Plan
+                                    <b>•</b>
+                                    3D Mesh Development @ Perplexity
+                                </p>
+
+                                <p class="website-link">
+                                    ◉ Website:
+                                    <a href="#" onclick="return false;">
+                                        @Chrome.com.site
+                                    </a>
+                                </p>
+
+
+                                <div class="payment-box">
+
+                                    <div class="cash">
+                                        <div class="payment-icon">$</div>
+
+                                        <div>
+                                            <small>Cash In:</small>
+                                            <strong>$24.00 <em>USD</em></strong>
+                                        </div>
+
+                                        <span class="received">Received</span>
+                                    </div>
+
+
+                                    <div class="payment-status">
+                                        <div class="clock-icon">◷</div>
+
+                                        <div>
+                                            <small>Payment Status:</small>
+                                            <strong>Completed ✓</strong>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT TWO -->
+                    <article class="project-card">
+
+                        <div class="project-status">
+                            <span class="sold-badge">✓ SOLD</span>
+                            <span class="received-badge">Payment Received</span>
+                        </div>
+
+                        <div class="project-body">
+
+                            <div class="project-image game-image">
+                                <div class="image-overlay">
+                                    <strong>FPV FREERIDER</strong>
+                                    <span>GAME PLAN</span>
+                                </div>
+                            </div>
+
+                            <div class="project-details">
+
+                                <h3>
+                                    Site Two
+                                    <span>—</span>
+                                    Game Plan
+                                </h3>
+
+                                <p>
+                                    <span>▶</span>
+                                    @Google Play — FPV Freerider
+                                </p>
+
+                                <p>
+                                    You currently have
+                                    <strong>26 active</strong>
+                                    in-game players.
+                                </p>
+
+                                <p class="website-link">
+                                    ▶ @Google Play.com
+                                    <b>/</b>
+                                    YouTube
+                                    <b>@PixelVelocityGaming.com</b>
+                                </p>
+
+
+                                <div class="payment-box">
+
+                                    <div class="cash">
+                                        <div class="payment-icon">$</div>
+
+                                        <div>
+                                            <small>Cash In:</small>
+                                            <strong>$28.71 <em>USD</em></strong>
+                                        </div>
+
+                                        <span class="received">Received</span>
+                                    </div>
+
+
+                                    <div class="payment-status">
+                                        <div class="clock-icon">◷</div>
+
+                                        <div>
+                                            <small>Payment Status:</small>
+                                            <strong>Completed ✓</strong>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- RIGHT COLUMN -->
+                <aside class="right-column">
+
+                    <!-- PAYMENT SUMMARY -->
+                    <div class="side-card payment-summary">
+
+                        <div class="big-wallet">▣</div>
+
+                        <div class="summary-title">
+                            <span>Total Payment Made</span>
+                            <strong>$75.71 <small>USD</small></strong>
+                        </div>
+
+                        <div class="progress">
+                            <div></div>
+                        </div>
+
+                        <div class="summary-divider"></div>
+
+                        <div class="pending-summary">
+                            <div class="pending-icon">◷</div>
+
+                            <div>
+                                <span>Pending Payments</span>
+                                <strong>$24 <small>USD</small></strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ALL WEBSITES -->
+                    <div class="side-card">
+
+                        <h3 class="side-title">
+                            <span>▥</span>
+                            All 7 Development Websites
+                        </h3>
+
+                        <div class="website-list">
+
+                            <div class="website-row">
+                                <b>1.</b>
+                                <span>Development Plan</span>
+                                <label class="sold-small">Sold</label>
+                                <strong>$24</strong>
+                                <em class="pending">◷ (Pending)</em>
+                            </div>
+
+                            <div class="website-row">
+                                <b>2.</b>
+                                <span>Game Plan</span>
+                                <label class="sold-small">Sold</label>
+                                <strong>$28.71</strong>
+                                <em class="paid">✓ (Paid)</em>
+                            </div>
+
+                            <div class="website-row">
+                                <b>3.</b>
+                                <span>Website 3</span>
+                                <em class="active">● (Active)</em>
+                            </div>
+
+                            <div class="website-row">
+                                <b>4.</b>
+                                <span>Website 4</span>
+                                <em class="active">● (Active)</em>
+                            </div>
+
+                            <div class="website-row">
+                                <b>5.</b>
+                                <span>Website 5</span>
+                                <em class="active">● (Active)</em>
+                            </div>
+
+                            <div class="website-row">
+                                <b>6.</b>
+                                <span>Website 6</span>
+                                <em class="active">● (Active)</em>
+                            </div>
+
+                            <div class="website-row">
+                                <b>7.</b>
+                                <span>Website 7</span>
+                                <em class="active">● (Active)</em>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ACTIVITY -->
+                    <div class="side-card">
+
+                        <h3 class="side-title">
+                            <span>◷</span>
+                            Latest Activity
+                        </h3>
+
+                        <div class="activity">
+
+                            <div class="activity-item">
+                                <div class="activity-icon green">✓</div>
+
+                                <div>
+                                    <strong>
+                                        Site Two (Game Plan) — Payment received
+                                    </strong>
+                                    <span>$28.71 · Sep 23, 2026</span>
+                                </div>
+
+                                <time>Today, 12:19</time>
+                            </div>
+
+
+                            <div class="activity-item">
+                                <div class="activity-icon green">✓</div>
+
+                                <div>
+                                    <strong>
+                                        Site Two (Game Plan) — Player count updated
+                                    </strong>
+                                    <span>26 active players</span>
+                                </div>
+
+                                <time>Today, 11:42</time>
+                            </div>
+
+
+                            <div class="activity-item">
+                                <div class="activity-icon yellow">◷</div>
+
+                                <div>
+                                    <strong>
+                                        Site One (Development Plan) — Pending payment
+                                    </strong>
+                                    <span>$24</span>
+                                </div>
+
+                                <time>Today, 10:03</time>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- OTHER PAGES -->
+        <section class="page hidden-page" id="websitesPage">
+            <div class="large-panel">
+                <h2>Websites &amp; Projects</h2>
+                <p>Manage all development projects from this section.</p>
+
+                <div class="tool-grid">
+                    <div class="tool-card">Development Plan</div>
+                    <div class="tool-card">Game Plan</div>
+                    <div class="tool-card">Website 3</div>
+                    <div class="tool-card">Website 4</div>
+                    <div class="tool-card">Website 5</div>
+                    <div class="tool-card">Website 6</div>
+                    <div class="tool-card">Website 7</div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="page hidden-page" id="salesPage">
+            <div class="large-panel">
+                <h2>Sales &amp; Payments</h2>
+                <p>Track received and pending project payments.</p>
+
+                <div class="sales-total">
+                    <span>Total Received</span>
+                    <strong>$75.71 USD</strong>
+                </div>
+
+                <div class="sales-total pending-total">
+                    <span>Pending</span>
+                    <strong>$24.00 USD</strong>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="page hidden-page" id="analyticsPage">
+            <div class="large-panel">
+                <h2>Analytics</h2>
+                <p>Development and sales analytics will appear here.</p>
+
+                <div class="analytics-bars">
+                    <div style="height:40%"><span>Website 3</span></div>
+                    <div style="height:55%"><span>Website 4</span></div>
+                    <div style="height:70%"><span>Website 5</span></div>
+                    <div style="height:85%"><span>Website 6</span></div>
+                    <div style="height:100%"><span>Website 7</span></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="page hidden-page" id="toolsPage">
+            <div class="large-panel">
+                <h2>Development Tools</h2>
+                <p>Development utilities and project tools.</p>
+
+                <div class="tool-grid">
+                    <div class="tool-card">Code Editor</div>
+                    <div class="tool-card">Site Builder</div>
+                    <div class="tool-card">3D Development</div>
+                    <div class="tool-card">Architecture Tools</div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="page hidden-page" id="settingsPage">
+            <div class="large-panel">
+                <h2>Settings</h2>
+                <p>Configure your SM Origins dashboard.</p>
+
+                <button class="action-button" id="themeButton">
+                    Toggle Interface Glow
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-brand">
+            <strong>SM</strong> ORIGINS
+        </div>
+
+        <span>Your Vision</span>
+        <b>•</b>
+        <span>Our Development</span>
+        <b>•</b>
+        <span>Global Impact</span>
+
+        <div class="footer-security">
+            🛡 Secure
+            <b>|</b>
+            Encrypted
+            <b>|</b>
+            Chrome Powered
+        </div>
+    </footer>
+
+</div>
+
+
+<!-- NOTIFICATION PANEL -->
+<div class="notification-panel" id="notificationPanel">
+
+    <div class="notification-header">
+        <strong>Notifications</strong>
+        <button id="closeNotifications">×</button>
+    </div>
+
+    <div class="notification-item">
+        <span class="notification-green">✓</span>
+        <div>
+            <strong>Payment received</strong>
+            <small>Site Two — $28.71 USD</small>
+        </div>
+    </div>
+
+    <div class="notification-item">
+        <span class="notification-yellow">◷</span>
+        <div>
+            <strong>Payment pending</strong>
+            <small>Site One — $24.00 USD</small>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
